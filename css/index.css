@@ -644,6 +644,7 @@ input {
     /*justify/-content: space-between;*/
     text-align: center;
     align-items: center;
+    padding: 50px 0;
     /*margin: 0 auto;*/
 }
 
@@ -651,8 +652,9 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: 5px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
     width: 75%;
     /*border: 1px solid;*/
@@ -660,13 +662,19 @@ input {
     /*background:rgba(200,205,210,0.3);*/
     /*background-color: #bfc3c7;*/
 }
+.width-company img{
+    max-width: 150px;
+    max-height: 42px;
+}
 
 .child {
     /*padding: 0px 46px;*/
     /*font-size: 40px;*/
     text-align: center;
-    line-height: 132px;
+    /*line-height: 132px;*/
     color: #FFFFFF;
+    width: 20%;
+
 }
 
 /*pricing table*********************************************/
@@ -690,11 +698,33 @@ input {
     /*float: left;*/
     width: 33.3%;
     padding: 8px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+.columns:not(.special):hover{
+    transform: scaleY(1.1) translateY(-5%);
+
+
+}
+.special{
+    transform: scaleY(1.1) translateY(-5%);
+
+}
+/*.special:hover{*/
+    /*transform: scaleY(0.8) translateY(0);*/
+/*}*/
+ul:hover {
+    border-top-width:thick;
+         border-top-color:black ;
 }
 .special ul {
     /*margin-top: -100px;*/
     border-top-width:thick;
     border-top-color:black ;
+
 }
 .price {
     list-style-type: none;
@@ -1189,11 +1219,17 @@ input[type=submit], select {
     /*mark*/
     .width-company {
         width: 100%;
-        display: block;
+        /*display: block;*/
         /*margin: 12% ;*/
         overflow: hidden;
         margin: 0 auto;
         align-items: center;
+
+
+    }
+    .child {
+       margin-bottom: 10px;
+        width: 30%;
 
     }
 
